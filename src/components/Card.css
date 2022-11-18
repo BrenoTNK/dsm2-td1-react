@@ -1,0 +1,64 @@
+body {
+    background-color: #222;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eee;
+    margin: 30px;
+}
+
+.Card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.Card .Header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cores dos cards */
+
+.Card.Red .Header {
+    color: #fff;
+    background-color: #ff0000;
+}
+.Card.Red .Content {
+    background-color: #ff4142;
+}
+
+.Card.Green .Header {
+    color: #fff;
+    background-color: #008b07;
+}
+.Card.Green .Content {
+    background-color: #00b48a;
+}
+
+.Card.Blue .Header {
+    color: #fff;
+    background-color: #0000ff;
+}
+.Card.Blue .Content {
+    background-color: #4142ff;
+}
+
+.Card.Purple .Header {
+    color: #fff;
+    background-color: #9900ff;
+}
+.Card.Purple .Content {
+    background-color: #8164ff;
+}
+
+/* Fim das Cores dos cards */
+
+.Card .Header .Title {
+    flex: 1;
+    padding: 5px;
+}
+
+.Card .Content {
+    padding: 20px;
+}

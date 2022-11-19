@@ -1,16 +1,17 @@
 import React from "react";
 import Card from "./Card";
 
-function Media(props) {
+function Sortea(props) {
 
     const {min, max} = props;
+    const aleatorio = parseInt(Math.random() * (max - min)) + min;
 
     return (
-        <Card title="Média dos Números" green>
+        <Card title="Sorteio de Números" purple>
             <div>
                 <span>
                     <span>Resultado: </span>
-                    <strong>{ (min + max) / 2 }</strong>
+                    <strong>{ aleatorio }</strong>
                 </span>
             </div>
         </Card>
@@ -18,4 +19,4 @@ function Media(props) {
 }
 
 
-export default Media;
+export default Sortea;
